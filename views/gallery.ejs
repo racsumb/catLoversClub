@@ -1,0 +1,12 @@
+<%- include('partials/header.ejs') %>
+
+<div class="card">
+    <h1>Random Cat Gallery 📸</h1>
+    <p>Here is a fresh, random picture of a cat just for you! It comes straight from <a href="https://thecatapi.com" target="_blank">https://thecatapi.com</a>.</p>
+    <p>(Refresh the page to see a new one)</p>
+    
+    <br>
+    <img src="<%= catImage %>" alt="A random cute cat" class="cat-image">
+</div>
+
+<%- include('partials/footer.ejs') %>

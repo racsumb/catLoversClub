@@ -1,0 +1,14 @@
+<%- include('partials/header.ejs') %>
+
+<div class="card">
+    <h1>Text-Face Generator ⌨️</h1>
+    <p>As a bonus, here is a cat made entirely out of text. These are generated from the node package <a href="https://www.npmjs.com/package/cat-ascii-faces" target="_blank">cat-ascii-faces</a>.</p>
+    
+    <div class="ascii-face">
+        <%= face %>
+    </div>
+    
+    <p>(Refresh to generate a new expression!)</p>
+</div>
+
+<%- include('partials/footer.ejs') %>

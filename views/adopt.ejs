@@ -1,0 +1,18 @@
+<%- include('partials/header.ejs') %>
+
+<div class="card">
+    <h1>Meet Your New Best Friend! 🏡</h1>
+    <p>These distinguished cats are currently looking for a home. This data is generated from the node package <a href="https://www.npmjs.com/package/@faker-js/faker" target="_blank">@faker-js/faker</a>. </p>
+    
+    <ul class="adopt-list">
+        <% cats.forEach(function(cat) { %>
+            <li>
+                <strong>Name:</strong> <%= cat.name %> <br>
+                <strong>Former Job:</strong> <%= cat.title %> <br>
+                <strong>Personality:</strong> Very <%= cat.trait %>
+            </li>
+        <% }); %>
+    </ul>
+</div>
+
+<%- include('partials/footer.ejs') %>
